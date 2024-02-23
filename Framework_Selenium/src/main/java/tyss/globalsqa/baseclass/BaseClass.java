@@ -1,6 +1,7 @@
 package tyss.globalsqa.baseclass;
 
 import java.security.PublicKey;
+import java.time.Duration;
 import java.time.LocalDateTime;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -31,6 +32,7 @@ public class BaseClass {
 	@BeforeMethod
 	public void navigation() {
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30000));
 		driver.get("https://demowebshop.tricentis.com/");
 
 	}

@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import bsh.This;
-
 public class LoginPage {
 	public LoginPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -38,6 +36,20 @@ public class LoginPage {
 
 	public WebElement getLoginButton() {
 		return loginButton;
+	}
+
+	@FindBy(xpath = "//span[text()='Login was unsuccessful. Please correct the errors and try again.']")
+	private WebElement loginUnsuccessfulErrorMessage;
+
+	public WebElement getLoginUnsuccessfulErrorMessage() {
+		return loginUnsuccessfulErrorMessage;
+	}
+	
+	@FindBy(xpath = "//a[text()='Forgot password?']")
+	private WebElement forgotpasswordLink;
+
+	public WebElement getForgotpasswordLink() {
+		return forgotpasswordLink;
 	}
 
 }

@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Wishlist.Wishlist">
+      <class name="Login.LoginTest">
         <methods>
           <include name="flushReport"/>
           <include name="quit"/>
           <include name="navigation"/>
-          <include name="name"/>
+          <include name="tc005"/>
           <include name="browserSetup"/>
         </methods>
-      </class> <!-- Wishlist.Wishlist -->
+      </class> <!-- Login.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

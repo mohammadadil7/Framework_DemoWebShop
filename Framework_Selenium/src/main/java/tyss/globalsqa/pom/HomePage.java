@@ -28,4 +28,44 @@ public class HomePage {
 
 	}
 
+	@FindBy(xpath = "//input[@value='Subscribe']")
+	private WebElement subscribeButton;
+
+	public WebElement getSubscribeButton() {
+		return subscribeButton;
+
+	}
+
+	@FindBy(xpath = "//div[text()='Enter valid email']")
+	private WebElement errorMessageText;
+
+	public WebElement getErrorMessageText() {
+		return errorMessageText;
+
+	}
+
+	@FindBy(xpath = "//input[@value='Search']")
+	private WebElement searchButton;
+
+	public WebElement getSearchButton() {
+		return searchButton;
+
+	}
+
+	@FindBy(xpath = "//a[text()='Sitemap']")
+	private WebElement sitemapLink;
+
+	public WebElement getSitemapLink() {
+		return sitemapLink;
+
+	}
+
+	@FindBy(xpath = "//h1[text()='Sitemap']")
+	private WebElement sitemapText;
+
+	public WebElement getSitemapText() {
+		return sitemapText;
+
+	}
+
 }
